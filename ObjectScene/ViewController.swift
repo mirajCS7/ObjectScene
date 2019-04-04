@@ -57,8 +57,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     
     func createBall(position : SCNVector3)
     {
-        var myBallShape = SCNSphere(radius: 0.01)
-        var myBallNode = SCNNode(geometry: myBallShape)
+        let myBallShape = SCNSphere(radius: 0.01)
+        let myBallNode = SCNNode(geometry: myBallShape)
         myBallNode.position = position
         sceneView.scene.rootNode.addChildNode(myBallNode)
         
